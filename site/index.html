@@ -1,47 +1,66 @@
- 
- <!DOCTYPE html>
- <html>
- <head>
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Media Queries !</title>
 <style>
-div{
+	/**********Base Style**************/
+	h1{
+		margin-bottom:  15px;
+	}
+	p{border:1px solid black;
+		margin-bottom: 15px;
+	}
+	#p1 {
+		background-color:  #A52a2a;
+		width: 50px;
+		height: 50px;
+	}
+	#p2 {
+		background-color:  #DEB887;
+		width: 50px;
+		height: 50px;
+	}
+	#p3 {
+		background-color:  gray;
+		width: 50px;
+		height: 50px;
+	}
+	/**********Large device only *****/
+@media (min-width:1100px) {
+	#p1 {width: 150px;
+	height: 150px;
+	}
+#p2 {
+	width: 150px;
+	height: 150px;
+}
+#p3 {
+	width: 150px;
+	height: 150px;
+}
+}
+/**********Mediume only *****/
+@media (min-width: 900px) and (max-width: 1099px) {
+	#p1 {
+		width: 50%;
+	}
+#p2 {
+	width: 100px;
+	height: 100px;
 
-	background-color: lightgrey;
-	width: 300px;
-border: 2px solid green;
-padding: 25px  ;
-margin: 25px;
-}	
-
-
+}
+#p3 {
+	width: 100px;
+	height: 100px;
+}
+}
 </style>
- </head>
-<div> wiefjie iqefjqi qefq-j9f q9j-qf -qq-f-qf
-</div>
-
-<div>fitsum oefh oqq oqiq oqiqi qij w09u oiqwhqi oiji pijiqj</div>
- 
-
- <tr>
- 	<td class="one">wepipqpifpqt</td>
- 
- </tr>
-<table width="200" cellpadding="10" cellspacing="
-5">
-	<tr>
-	<th></th>
-	<th>9am</th>	
-    <th>10am</th>
-	<th>11am</th>
-	</tr>
-<tr>
-	<th> January </th>
-</tr>
-</table>
-<p>Username
-<input type="text" name="Username" size="15" maxlength="30"/>
-
-</p>
-<p>Password:
-<input type="Password" name="Password" size="15" maxlength="30" c/>
-</p>
- </html>
+</head>
+<body>
+<h1>Media Queries</h1>
+<p id="p1"></p>
+<p id="p2"></p>
+<p id="p3"></p>
+</body>
+</html>
